@@ -1,0 +1,154 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+@media(max-width: 768px){
+    body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+        display: flex;
+        width: 1440px;
+        padding: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background:white;
+    }
+    
+    .footer__rodape{
+        color: var(--preto-100, #464646);
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+    .fecha{
+        text-align: center;
+        justify-content: center;
+    }
+  /* Consulta de medios para pantallas de 768px o menos */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de fuente base */
+    body {
+        font-size: 16px; /* Por ejemplo, puedes establecer 16px como tamaño de fuente base */
+    }
+    .todo {
+        flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    }
+
+    /* Ajusta el ancho máximo para toda la página */
+    body, .menu__nav, .menu__list, .menu__list__item, .title, .title__div, .title__profile, .title__container, .title__bio, .title__subsection, .title__network, .title__network__item, .academic, .academic__title, .academic__courses, .academic__courses__box, .academic__courses__list, .academic__courses__item__img, .academic__courses__item__title, .academic__courses__item__subtitle, .experience, .experience__section__title, .experiencie__box, .experience__img, .experience__info, .experience__title, .experience__text, .experience__description, .formcontacto, .formcontacto__contacto, .formcontacto--esquerda, .formcontacto__img, .formcontacto__text, .formcontato__text__subtext, .formcontacto__title, .formcontacto__subtext, .formcontacto__form, .formcontacto__input, .formcontacto__textarea, .formcontacto__boton, .footer, .footer__rodape {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% del ancho de la pantalla */
+        width: 90%; /* Ajusta el ancho del contenido al 90% del ancho de la pantalla */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+    }
+
+    /* Ajusta tamaños de fuente y anchos relativos utilizando porcentajes */
+    .menu__title {
+        font-size: 4%; /* Por ejemplo, el tamaño de fuente es el 4% del ancho de la pantalla */
+    }
+
+    .title__profile {
+        width: 60%; /* Por ejemplo, el ancho es el 60% del ancho de la pantalla */
+    }
+
+    .title__bio, .title__subsection, .title__network__item, .academic__courses__item__title, .academic__courses__item__subtitle, .experience__title, .experience__text, .formcontacto__input, .formcontacto__textarea, .formcontacto__boton {
+        font-size: 2%; /* Por ejemplo, el tamaño de fuente es el 2% del ancho de la pantalla */
+    }
+
+    .experience__img {
+        width: 20%; /* Por ejemplo, el ancho es el 20% del ancho de la pantalla */
+    }
+
+    /* Agrega más estilos según tus necesidades */
+}
+
+

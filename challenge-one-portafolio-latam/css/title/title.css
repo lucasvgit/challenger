@@ -1,0 +1,15 @@
+.title {
+display: flex;
+width: 1136px;
+justify-content: space-between;
+align-items: center;
+}
+
+
+@media (max-width:360px){
+    .title__div{
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+    }
+ }

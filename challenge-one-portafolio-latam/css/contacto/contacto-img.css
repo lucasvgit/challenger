@@ -1,0 +1,12 @@
+.formcontacto__img{
+	width: 464px;
+	height: 593px;
+	flex-shrink: 0;
+	background: url(<path-to-image>), lightgray 50% / cover no-repeat, #EDEDED;
+}
+
+@media (max-width: 768px){
+    .formcontato--esquerda{
+        display: none;
+    }
+}

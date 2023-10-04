@@ -1,0 +1,16 @@
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+  }
+
+.menu__logo {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    }
+
+ 

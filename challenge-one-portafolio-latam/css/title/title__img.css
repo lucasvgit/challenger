@@ -1,0 +1,22 @@
+.title__profile {
+    width: 368px;
+    height: 368px;
+    flex-shrink: 0;
+    border-radius: 368px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    order: 2;
+    
+    }
+
+    @media (max-width: 768px) {
+        .title__profile {
+           width: 8rem;
+        }
+     }
+     
+     @media (max-width: 360px) {
+        .title__profile {
+           width: 4rem;
+           margin-bottom: 1rem;
+        }
+     }

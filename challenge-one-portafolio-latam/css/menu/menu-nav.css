@@ -1,0 +1,57 @@
+.menu__list {
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: row;
+
+  }
+  
+ 
+  
+  
+  .menu__list__item a {
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .menu__list__item:hover a {
+    font-size: 18px;
+    color: #d09306;
+  }
+  
+  
+  
+  .menu__title {
+    align-self: flex-start;
+    transition: 0.5s;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .menu__title:hover a{
+    font-size: 22px;
+    color: #d09306;
+  }
+  
+  .menu__contacto {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+
+ @media (max-width: 768px) {
+      .menu__list .menu__list__item:not(:last-child) {
+          display: none;
+      }
+  }
+
+@media (max-width: 360px) {
+    .menu__list__item__contato {
+        font-weight: 500;
+        font-size: .6rem;
+    }
+}

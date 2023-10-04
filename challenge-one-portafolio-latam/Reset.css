@@ -1,0 +1,41 @@
+/* Reset básico */
+
+/* Establecer el margen y el relleno en 0 para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer estilos predeterminados de tipografía */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Restablecer estilos de lista */
+ul, ol {
+  list-style: none;
+}
+
+/* Restablecer estilos de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Restablecer estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Restablecer estilos de párrafos */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Restablecer estilos de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}

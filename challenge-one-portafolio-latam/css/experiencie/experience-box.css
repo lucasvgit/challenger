@@ -1,0 +1,125 @@
+.experiencie__box{
+    display: flex;
+    width: 1136px;
+    height: 406px;
+    align-items: center;
+    gap: 16px;
+    }
+    
+    .experiencie__box:nth-child(3), .experiencie__box:nth-child(5) {
+      flex-direction: row-reverse;
+        display: flex;
+      justify-content: center;
+    }
+    
+    .experiencie__box:nth-child(3) .experience__repo,
+    .experiencie__box:nth-child(3) .experience__demo,
+    .experiencie__box:nth-child(5) .experience__repo,
+    .experiencie__box:nth-child(5) .experience__demo,
+    .experiencie__box:nth-child(3) .experience__title,
+    .experiencie__box:nth-child(5) .experience__title,
+    .experiencie__box:nth-child(3) .experience__text,
+    .experiencie__box:nth-child(5) .experience__text{
+      transform: translateX(70px);
+    }
+    
+    .experience__img{
+    width: 60%;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+     margin-right: 32px;
+    }
+    
+    
+    .experience__info{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    }
+    
+    .experience__title{
+    align-self: stretch;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
+    .experience__text{
+    align-self: stretch;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    
+    .experience__description{
+    display: flex;
+    width: 560px;
+    align-items: flex-start;
+    gap: 16px;
+    }
+    
+    .experience__repo {
+      border: 1px solid var(--azul-100, #2A7AE4);
+      display: flex;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .experiencia__botao--repo {
+      color: var(--azul-100, #2A7AE4);
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-color: transparent;
+    }
+    
+    
+    .experience__demo{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--azul-100, #2A7AE4);
+    }
+    
+    .experience__botao--demo{
+    color: var(--preto-branco, #FFF);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: transparent;
+    background: none;
+    }
+    
+    @media (max-width: 768px) {
+      .experiencie__box {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  
+      .experiencie__box:nth-child(3),
+      .experiencie__box:nth-child(5) {
+          flex-direction: column;
+      }
+  
+      .experience__img {
+          width: 100%;
+      }
+  }

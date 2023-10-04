@@ -1,0 +1,17 @@
+.section-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 88px;
+  align-self: stretch;
+  width: 100%;
+  height: 1245px;
+  margin: auto;
+  margin-top: 28px;
+}
+
+
+
+
+
+
